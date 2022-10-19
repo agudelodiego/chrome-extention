@@ -1,0 +1,27 @@
+{
+  "name": "chrome-extention",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "keywords": [],
+  "author": "Peaku",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "7.19.3",
+    "@babel/preset-env": "7.19.4",
+    "@babel/preset-react": "7.18.6",
+    "babel-loader": "8.2.5",
+    "css-loader": "6.7.1",
+    "style-loader": "3.3.1",
+    "webpack": "5.74.0",
+    "webpack-cli": "4.10.0"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  }
+}

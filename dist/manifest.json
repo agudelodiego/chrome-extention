@@ -1,0 +1,31 @@
+{
+  "name": "Peaku extension",
+  "version": "1.0.0",
+  "description": "This is a tool that help you to find a job, you can filter by role and contry. You need to logging in linkedin and peaku platform https://peaku.co",
+  "manifest_version": 3,
+  "author": "Peaku Team",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Finding Job"
+  },
+  "host_permissions": [
+    "https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/*",
+    "https://api.peaku.co/*",
+    "https://peaku.co/*",
+    "https://www.linkedin.com/*",
+    "http://localhost:8080/*"
+  ],
+  "content_security_policy": {
+    "extension_pages": "style-src 'self'; object-src;script-src 'self'; default-src ; script-src-elem 'self'"
+  },
+  "permissions": ["tabs", "cookies", "scripting","declarativeContent","activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": ["https://*/*"]
+    }
+  ]
+}

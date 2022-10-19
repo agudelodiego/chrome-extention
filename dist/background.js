@@ -1,0 +1,1 @@
+chrome.runtime.onMessage.addListener((async(e,n,s)=>{console.log(`Mensaje recibido en el background -> ${e.message}`)}));
