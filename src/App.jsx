@@ -8,7 +8,7 @@ const App = () => {
   });
   
   return (
-    <h1>Hello extensions</h1>
+    <h1 className='title'>Hello extensions</h1>
   );
 };
 export default App;
