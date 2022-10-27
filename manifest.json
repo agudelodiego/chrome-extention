@@ -16,9 +16,9 @@
     "http://localhost:8080/*"
   ],
   "content_security_policy": {
-    "extension_pages": "style-src 'self' https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css; object-src;script-src 'self'; default-src ; connect-src https://www.linkedin.com/; script-src-elem 'self'"
+    "extension_pages": "style-src 'self'; object-src;script-src 'self'; default-src ; script-src-elem 'self'"
   },
-  "permissions": ["tabs", "cookies", "scripting","declarativeContent","activeTab","storage"],
+  "permissions": ["tabs", "cookies", "scripting","declarativeContent","activeTab"],
   "background": {
     "service_worker": "background.js"
   },

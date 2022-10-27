@@ -1,11 +1,9 @@
 body{
   width: 500px;
-  height: 600px; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: red;
+  height: 600px;
+  padding: 40px 30px;
+  box-sizing: border-box;
 }
-.title{
-  color: blue;
+html{
+  overflow: hidden;
 }
